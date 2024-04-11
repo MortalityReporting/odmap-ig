@@ -1,0 +1,288 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://orainc.com/fhir/odmap/Bundle/Bundle-document-odmap-example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Bundle-document-odmap-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Bundle-document-odmap"^^xsd:anyURI ;
+       fhir:link <http://orainc.com/fhir/odmap/StructureDefinition/Bundle-document-odmap>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "https://mdilog.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2541097" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2024-01-15T15:30:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://mdilog.com/Composition/composition-mdi-odmap"^^xsd:anyURI ] ;
+     fhir:resource ( <https://mdilog.com/Composition/composition-mdi-odmap> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://mdilog.com/Organization/Organization-MDILog"^^xsd:anyURI ] ;
+     fhir:resource ( <https://mdilog.com/Organization/Organization-MDILog> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://mdilog.com/Patient/patient-mdi-odmap"^^xsd:anyURI ] ;
+     fhir:resource ( <https://mdilog.com/Patient/patient-mdi-odmap> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://mdilog.com/Location/location-mdi-odmap"^^xsd:anyURI ] ;
+     fhir:resource ( <https://mdilog.com/Location/location-mdi-odmap> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://mdilog.com/Observation/incident-mdi-odmap"^^xsd:anyURI ] ;
+     fhir:resource ( <https://mdilog.com/Observation/incident-mdi-odmap> )
+  ] ) . # 
+
+<https://mdilog.com/Composition/composition-mdi-odmap> a fhir:Composition ;
+  fhir:id [ fhir:v "composition-mdi-odmap"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Composition-odmap"^^xsd:anyURI ;
+       fhir:link <http://orainc.com/fhir/odmap/StructureDefinition/Composition-odmap>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-mdi-odmap\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-mdi-odmap&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-odmap.html\">Composition - ODMAP</a></p></div><p><b>status</b>: final</p><p><b>type</b>: ODMAP submission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#odmap-submission)</span></p><p><b>date</b>: 2024-01-15</p><p><b>author</b>: <a href=\"#Organization_Organization-MDILog\">See above (Organization/Organization-MDILog)</a></p><p><b>title</b>: MDILog to ODMAP Composition</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "odmap-submission" ] ;
+       fhir:display [ fhir:v "ODMAP submission" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://orainc.com/fhir/odmap/Patient/patient-mdi-odmap> ;
+     fhir:reference [ fhir:v "Patient/patient-mdi-odmap" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-01-15"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://orainc.com/fhir/odmap/Organization/Organization-MDILog> ;
+     fhir:reference [ fhir:v "Organization/Organization-MDILog" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "MDILog to ODMAP Composition"] ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "incident-section" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://orainc.com/fhir/odmap/Location/location-mdi-odmap> ;
+       fhir:reference [ fhir:v "Location/location-mdi-odmap" ]
+     ] [
+       fhir:link <http://orainc.com/fhir/odmap/Observation/incident-mdi-odmap> ;
+       fhir:reference [ fhir:v "Observation/incident-mdi-odmap" ]
+     ] )
+  ] ) . # 
+
+<https://mdilog.com/Organization/Organization-MDILog> a fhir:Organization ;
+  fhir:id [ fhir:v "Organization-MDILog"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Organization-MDILog\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Organization-MDILog&quot; </p></div><p><b>name</b>: MDILog</p></div>"
+  ] ; # 
+  fhir:name [ fhir:v "MDILog"] . # 
+
+<https://mdilog.com/Patient/patient-mdi-odmap> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-mdi-odmap"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Patient-odmap"^^xsd:anyURI ;
+       fhir:link <http://orainc.com/fhir/odmap/StructureDefinition/Patient-odmap>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-mdi-odmap\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-mdi-odmap&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-odmap.html\">Patient - ODMAP</a></p></div><p><b>Extension - Age Years</b>: 39</p><p><b>identifier</b>: id: 2023-0051</p><p><b>gender</b>: male</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Extension-age-years"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "39"^^xsd:integer ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://mdilog.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-0051" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] . # 
+
+<https://mdilog.com/Location/location-mdi-odmap> a fhir:Location ;
+  fhir:id [ fhir:v "location-mdi-odmap"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Location-incident"^^xsd:anyURI ;
+       fhir:link <http://orainc.com/fhir/odmap/StructureDefinition/Location-incident>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"location-mdi-odmap\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;location-mdi-odmap&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Location-incident.html\">Location - Incident</a></p></div><p><b>address</b>: 124 Elm Street Big Rapids MI 49307 </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>-85.48261869999999</td><td>43.6968812</td></tr></table></div>"
+  ] ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "124 Elm Street" ] ) ;
+     fhir:city [ fhir:v "Big Rapids" ] ;
+     fhir:district [ fhir:v "Mecosta" ] ;
+     fhir:state [ fhir:v "MI" ] ;
+     fhir:postalCode [ fhir:v "49307" ]
+  ] ; # 
+  fhir:position [
+     fhir:longitude [ fhir:v "-85.48261869999999"^^xsd:decimal ] ;
+     fhir:latitude [ fhir:v "43.6968812"^^xsd:decimal ]
+  ] . # 
+
+<https://mdilog.com/Observation/incident-mdi-odmap> a fhir:Observation ;
+  fhir:id [ fhir:v "incident-mdi-odmap"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Observation-incident"^^xsd:anyURI ;
+       fhir:link <http://orainc.com/fhir/odmap/StructureDefinition/Observation-incident>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"incident-mdi-odmap\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;incident-mdi-odmap&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-incident.html\">Observation - Incident</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Injury incident description <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11374-6)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mdi-odmap\">See above (Patient/patient-mdi-odmap)</a></p><p><b>effective</b>: 2022-06-09 07:01:00-0400</p><blockquote><p><b>component</b></p><p><b>code</b>: Incident type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#incident-type)</span></p><p><b>value</b>: Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#5)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Suspected drug <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#suspected-drug)</span></p><p><b>value</b>: Heroin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#heroin)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Additional drug <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#additional-drug)</span></p><p><b>value</b>: Cocaine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#cocaine)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Is Multiple Victim <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-multiple-victim)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Taken to hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#taken-to-hospital)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Is motor vehicle involved <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-motor-vehicle-involved)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Naloxone Administered By <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#naloxone-administered-by)</span></p><p><b>value</b>: EMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#ems)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: LE left Naloxone behind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-le-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: EMS left Naloxone behind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-ems-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Bystander left Naloxone behind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-bystander-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11374-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11374-6" ] ;
+       fhir:display [ fhir:v "Injury incident description" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://orainc.com/fhir/odmap/Patient/patient-mdi-odmap> ;
+     fhir:reference [ fhir:v "Patient/patient-mdi-odmap" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-06-09T07:01:00-04:00"^^xsd:dateTime] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "incident-type" ] ;
+         fhir:display [ fhir:v "Incident type" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "suspected-drug" ] ;
+         fhir:display [ fhir:v "Suspected drug" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "heroin" ] ;
+         fhir:display [ fhir:v "Heroin" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "additional-drug" ] ;
+         fhir:display [ fhir:v "Additional drug" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cocaine" ] ;
+         fhir:display [ fhir:v "Cocaine" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-multiple-victim" ] ;
+         fhir:display [ fhir:v "Is Multiple Victim" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "taken-to-hospital" ] ;
+         fhir:display [ fhir:v "Taken to hospital" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-motor-vehicle-involved" ] ;
+         fhir:display [ fhir:v "Is motor vehicle involved" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "naloxone-administered-by" ] ;
+         fhir:display [ fhir:v "Naloxone Administered By" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ems" ] ;
+         fhir:display [ fhir:v "EMS" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-le-naloxone-leave-behind" ] ;
+         fhir:display [ fhir:v "LE left Naloxone behind" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-ems-naloxone-leave-behind" ] ;
+         fhir:display [ fhir:v "EMS left Naloxone behind" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-bystander-naloxone-leave-behind" ] ;
+         fhir:display [ fhir:v "Bystander left Naloxone behind" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

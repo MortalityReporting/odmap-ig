@@ -1,0 +1,282 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "73adf4c6-4126-4161-a183-a1f8f73b8273",
+  "meta" : {
+    "lastUpdated" : "2024-01-23T12:35:59.374-05:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://orainc.com/fhir/odmap/ValueSet/administered-by",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-odmap-codes.html\">codesystem CodeSystem - ODMAP Codes v0.1.0 (CodeSystem)</a></li><li><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\">codesystem NullFlavor v2.1.0 (CodeSystem)</a></li></ul></div><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-bystander\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-bystander\">bystander</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Bystander</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-police\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-police\">police</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Police</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-fire\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-fire\">fire</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Fire</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-ems\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-ems\">ems</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>EMS</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-hospital\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-hospital\">hospital</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Hospital</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>Other</td><td><div><p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>\n<p><strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.</p>\n<p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://orainc.com/fhir/odmap/ValueSet/administered-by",
+      "version" : "0.1.0",
+      "name" : "AdministeredBy",
+      "title" : "Administered By",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-23T12:35:59-05:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US",
+          "display" : "United States of America"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5d132cfe-3225-4e02-8455-1c082077f888",
+        "timestamp" : "2024-01-23T12:36:43-05:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes|0.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "bystander",
+          "display" : "Bystander"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "police",
+          "display" : "Police"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "fire",
+          "display" : "Fire"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "ems",
+          "display" : "EMS"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "hospital",
+          "display" : "Hospital"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code" : "OTH",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://orainc.com/fhir/odmap/ValueSet/incident-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-odmap-codes.html\">codesystem CodeSystem - ODMAP Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 8 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-1\">1</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Non-Fatal Naloxone Not Administered</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-2\">2</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Non-Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-3\">3</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Non-Fatal Naloxone Multiple Doses (&gt;2mg IN or &gt;0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-4\">4</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Fatal Naloxone Not Administered</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-5\">5</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-6\">6</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Fatal Naloxone Multiple Doses (&gt;2mg IN or &gt;0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-7\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-7\">7</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Non-Fatal Naloxone Administration Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-8\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-8\">8</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Fatal Naloxone Administration Unknown</td></tr></table></div>"
+      },
+      "url" : "http://orainc.com/fhir/odmap/ValueSet/incident-type",
+      "version" : "0.1.0",
+      "name" : "IncidentType",
+      "title" : "Incident Type",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-23T12:35:59-05:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US",
+          "display" : "United States of America"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:6fb26d17-cbdb-4467-8519-6ac88ac75945",
+        "timestamp" : "2024-01-23T12:36:43-05:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "1",
+          "display" : "Non-Fatal Naloxone Not Administered"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "2",
+          "display" : "Non-Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "3",
+          "display" : "Non-Fatal Naloxone Multiple Doses (>2mg IN or >0.4mg IV) Administered"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "4",
+          "display" : "Fatal Naloxone Not Administered"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "5",
+          "display" : "Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "6",
+          "display" : "Fatal Naloxone Multiple Doses (>2mg IN or >0.4mg IV) Administered"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "7",
+          "display" : "Non-Fatal Naloxone Administration Unknown"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "8",
+          "display" : "Fatal Naloxone Administration Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://orainc.com/fhir/odmap/ValueSet/possible-drugs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-odmap-codes.html\">codesystem CodeSystem - ODMAP Codes v0.1.0 (CodeSystem)</a></li><li><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\">codesystem NullFlavor v2.1.0 (CodeSystem)</a></li></ul></div><p>This value set contains 17 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-alcohol\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-alcohol\">alcohol</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Alcohol</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-benzodiazepine\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-benzodiazepine\">benzodiazepine</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Benzodiazepine</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-cocaine\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-cocaine\">cocaine</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Cocaine</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-crack\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-crack\">crack</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Crack</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-fentanyl\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-fentanyl\">fentanyl</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Fentanyl</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-heroin\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-heroin\">heroin</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Heroin</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-lsd\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-lsd\">lsd</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>LSD</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-mdma\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-mdma\">mdma</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>MDMA</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-methadone\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-methadone\">methadone</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Methadone</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-methamphetamine\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-methamphetamine\">methamphetamine</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Methamphetamine</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-over-the-counter\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-over-the-counter\">over-the-counter</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Over The Counter</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-oxycodone\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-oxycodone\">oxycodone</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Oxycodone</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-pcp\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-pcp\">pcp</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>PCP</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-prescription-drugs\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-prescription-drugs\">prescription-drugs</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Prescription Drugs</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-suboxone\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-suboxone\">suboxone</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Suboxone</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---orainc.com-fhir-odmap-CodeSystem-odmap-codes-synthetic-marijuana\"> </a>\u00a0\u00a0<a href=\"CodeSystem-odmap-codes.html#odmap-codes-synthetic-marijuana\">synthetic-marijuana</a></td><td>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</td><td>Synthetic Marijuana</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>Other</td><td><div><p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>\n<p><strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.</p>\n<p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://orainc.com/fhir/odmap/ValueSet/possible-drugs",
+      "version" : "0.1.0",
+      "name" : "PossibleDrugs",
+      "title" : "Possible Drugs",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-23T12:35:59-05:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US",
+          "display" : "United States of America"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:4928f1d9-c12a-4144-ab81-be50137fdad8",
+        "timestamp" : "2024-01-23T12:36:43-05:00",
+        "total" : 17,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes|0.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "alcohol",
+          "display" : "Alcohol"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "benzodiazepine",
+          "display" : "Benzodiazepine"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "cocaine",
+          "display" : "Cocaine"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "crack",
+          "display" : "Crack"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "fentanyl",
+          "display" : "Fentanyl"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "heroin",
+          "display" : "Heroin"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "lsd",
+          "display" : "LSD"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "mdma",
+          "display" : "MDMA"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "methadone",
+          "display" : "Methadone"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "methamphetamine",
+          "display" : "Methamphetamine"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "over-the-counter",
+          "display" : "Over The Counter"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "oxycodone",
+          "display" : "Oxycodone"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "pcp",
+          "display" : "PCP"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "prescription-drugs",
+          "display" : "Prescription Drugs"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "suboxone",
+          "display" : "Suboxone"
+        },
+        {
+          "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+          "code" : "synthetic-marijuana",
+          "display" : "Synthetic Marijuana"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code" : "OTH",
+          "display" : "Other"
+        }]
+      }
+    }
+  }]
+}

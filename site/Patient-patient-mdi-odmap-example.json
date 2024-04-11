@@ -1,0 +1,20 @@
+{
+  "resourceType" : "Patient",
+  "id" : "patient-mdi-odmap-example",
+  "meta" : {
+    "profile" : ["http://orainc.com/fhir/odmap/StructureDefinition/Patient-odmap"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> male, DoB Unknown ( id:\u00a02023-0051)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Document the age in years\"><a href=\"StructureDefinition-Extension-age-years.html\">Extension - Age Years:</a></td><td colspan=\"3\"><ul><li>39</li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://orainc.com/fhir/odmap/StructureDefinition/Extension-age-years",
+    "valueInteger" : 39
+  }],
+  "identifier" : [{
+    "system" : "https://mdilog.com",
+    "value" : "2023-0051"
+  }],
+  "gender" : "male"
+}

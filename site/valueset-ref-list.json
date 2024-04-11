@@ -1,0 +1,46 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://orainc.com/fhir/odmap/ValueSet/administered-by",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "AdministeredBy",
+      "title" : "Administered By",
+      "description" : "This value set includes who administered naloxone.",
+      "systems" : [
+        "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-incident.html" : "Observation - Incident"
+    },
+    {
+      "url" : "http://orainc.com/fhir/odmap/ValueSet/incident-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IncidentType",
+      "title" : "Incident Type",
+      "description" : "This value set includes the acceptable incident types.",
+      "systems" : ["http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-incident.html" : "Observation - Incident"
+    },
+    {
+      "url" : "http://orainc.com/fhir/odmap/ValueSet/possible-drugs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "PossibleDrugs",
+      "title" : "Possible Drugs",
+      "description" : "This value set includes the possible drugs.",
+      "systems" : [
+        "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-incident.html" : "Observation - Incident"
+    }
+  ]
+}

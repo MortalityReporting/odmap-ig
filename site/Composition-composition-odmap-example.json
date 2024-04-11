@@ -1,0 +1,41 @@
+{
+  "resourceType" : "Composition",
+  "id" : "composition-odmap-example",
+  "meta" : {
+    "profile" : ["http://orainc.com/fhir/odmap/StructureDefinition/Composition-odmap"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-odmap-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-odmap-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-odmap.html\">Composition - ODMAP</a></p></div><p><b>status</b>: final</p><p><b>type</b>: ODMAP submission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#odmap-submission)</span></p><p><b>date</b>: 2024-01-15</p><p><b>author</b>: <a href=\"Organization-organization-mdilog-example.html\">Organization/organization-mdilog-example</a> &quot;MDILog&quot;</p><p><b>title</b>: MDILog to ODMAP Composition</p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+      "code" : "odmap-submission",
+      "display" : "ODMAP submission"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-mdi-odmap-example"
+  },
+  "date" : "2024-01-15",
+  "author" : [{
+    "reference" : "Organization/organization-mdilog-example"
+  }],
+  "title" : "MDILog to ODMAP Composition",
+  "section" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "incident-section"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Location/location-mdi-odmap-example"
+    },
+    {
+      "reference" : "Observation/incident-mdi-odmap-example"
+    }]
+  }]
+}

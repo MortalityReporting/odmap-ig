@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://orainc.com/fhir/odmap/Composition/composition-odmap-example> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "composition-odmap-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Composition-odmap"^^xsd:anyURI ;
+       fhir:link <http://orainc.com/fhir/odmap/StructureDefinition/Composition-odmap>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-odmap-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-odmap-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-odmap.html\">Composition - ODMAP</a></p></div><p><b>status</b>: final</p><p><b>type</b>: ODMAP submission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#odmap-submission)</span></p><p><b>date</b>: 2024-01-15</p><p><b>author</b>: <a href=\"Organization-organization-mdilog-example.html\">Organization/organization-mdilog-example</a> &quot;MDILog&quot;</p><p><b>title</b>: MDILog to ODMAP Composition</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "odmap-submission" ] ;
+       fhir:display [ fhir:v "ODMAP submission" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://orainc.com/fhir/odmap/Patient/patient-mdi-odmap-example> ;
+     fhir:reference [ fhir:v "Patient/patient-mdi-odmap-example" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-01-15"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://orainc.com/fhir/odmap/Organization/organization-mdilog-example> ;
+     fhir:reference [ fhir:v "Organization/organization-mdilog-example" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "MDILog to ODMAP Composition"] ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "incident-section" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://orainc.com/fhir/odmap/Location/location-mdi-odmap-example> ;
+       fhir:reference [ fhir:v "Location/location-mdi-odmap-example" ]
+     ] [
+       fhir:link <http://orainc.com/fhir/odmap/Observation/incident-mdi-odmap-example> ;
+       fhir:reference [ fhir:v "Observation/incident-mdi-odmap-example" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

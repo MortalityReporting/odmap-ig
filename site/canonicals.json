@@ -1,0 +1,79 @@
+[
+  {
+    "id" : "odmap-codes",
+    "type" : "CodeSystem",
+    "url" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+    "version" : "0.1.0",
+    "name" : "CodeSystemODMAPCodes"
+  },
+  {
+    "id" : "fhir.odmap",
+    "type" : "ImplementationGuide",
+    "url" : "http://orainc.com/fhir/odmap/ImplementationGuide/fhir.odmap",
+    "version" : "0.1.0",
+    "name" : "ODMAP"
+  },
+  {
+    "id" : "Bundle-document-odmap",
+    "type" : "StructureDefinition",
+    "url" : "http://orainc.com/fhir/odmap/StructureDefinition/Bundle-document-odmap",
+    "version" : "0.1.0",
+    "name" : "BundleDocumentODMAP"
+  },
+  {
+    "id" : "Composition-odmap",
+    "type" : "StructureDefinition",
+    "url" : "http://orainc.com/fhir/odmap/StructureDefinition/Composition-odmap",
+    "version" : "0.1.0",
+    "name" : "CompositionODMAP"
+  },
+  {
+    "id" : "Extension-age-years",
+    "type" : "StructureDefinition",
+    "url" : "http://orainc.com/fhir/odmap/StructureDefinition/Extension-age-years",
+    "version" : "0.1.0",
+    "name" : "ExtensionAgeYears"
+  },
+  {
+    "id" : "Location-incident",
+    "type" : "StructureDefinition",
+    "url" : "http://orainc.com/fhir/odmap/StructureDefinition/Location-incident",
+    "version" : "0.1.0",
+    "name" : "LocationIncident"
+  },
+  {
+    "id" : "Observation-incident",
+    "type" : "StructureDefinition",
+    "url" : "http://orainc.com/fhir/odmap/StructureDefinition/Observation-incident",
+    "version" : "0.1.0",
+    "name" : "ObservationIncident"
+  },
+  {
+    "id" : "Patient-odmap",
+    "type" : "StructureDefinition",
+    "url" : "http://orainc.com/fhir/odmap/StructureDefinition/Patient-odmap",
+    "version" : "0.1.0",
+    "name" : "PatientODMAP"
+  },
+  {
+    "id" : "administered-by",
+    "type" : "ValueSet",
+    "url" : "http://orainc.com/fhir/odmap/ValueSet/administered-by",
+    "version" : "0.1.0",
+    "name" : "AdministeredBy"
+  },
+  {
+    "id" : "incident-type",
+    "type" : "ValueSet",
+    "url" : "http://orainc.com/fhir/odmap/ValueSet/incident-type",
+    "version" : "0.1.0",
+    "name" : "IncidentType"
+  },
+  {
+    "id" : "possible-drugs",
+    "type" : "ValueSet",
+    "url" : "http://orainc.com/fhir/odmap/ValueSet/possible-drugs",
+    "version" : "0.1.0",
+    "name" : "PossibleDrugs"
+  }
+]

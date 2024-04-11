@@ -1,0 +1,158 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://orainc.com/fhir/odmap/Observation/incident-mdi-odmap-example-other> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "incident-mdi-odmap-example-other"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Observation-incident"^^xsd:anyURI ;
+       fhir:link <http://orainc.com/fhir/odmap/StructureDefinition/Observation-incident>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"incident-mdi-odmap-example-other\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;incident-mdi-odmap-example-other&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-incident.html\">Observation - Incident</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Injury incident description <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11374-6)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mdi-odmap-example.html\">Patient/patient-mdi-odmap-example</a></p><p><b>effective</b>: 2022-06-09 07:01:00-0400</p><blockquote><p><b>component</b></p><p><b>code</b>: Incident type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#incident-type)</span></p><p><b>value</b>: Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#5)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Suspected drug <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#suspected-drug)</span></p><p><b>value</b>: Loperamide <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#OTH &quot;Other&quot;)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Additional drug <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#additional-drug)</span></p><p><b>value</b>: Cocaine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#cocaine)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Is Multiple Victim <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-multiple-victim)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Taken to hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#taken-to-hospital)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Is motor vehicle involved <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-motor-vehicle-involved)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Naloxone Administered By <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#naloxone-administered-by)</span></p><p><b>value</b>: EMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#ems)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: LE left Naloxone behind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-le-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: EMS left Naloxone behind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-ems-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Bystander left Naloxone behind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-bystander-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11374-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11374-6" ] ;
+       fhir:display [ fhir:v "Injury incident description" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://orainc.com/fhir/odmap/Patient/patient-mdi-odmap-example> ;
+     fhir:reference [ fhir:v "Patient/patient-mdi-odmap-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-06-09T07:01:00-04:00"^^xsd:dateTime] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "incident-type" ] ;
+         fhir:display [ fhir:v "Incident type" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "suspected-drug" ] ;
+         fhir:display [ fhir:v "Suspected drug" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OTH" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] ) ;
+       fhir:text [ fhir:v "Loperamide" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "additional-drug" ] ;
+         fhir:display [ fhir:v "Additional drug" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cocaine" ] ;
+         fhir:display [ fhir:v "Cocaine" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-multiple-victim" ] ;
+         fhir:display [ fhir:v "Is Multiple Victim" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "taken-to-hospital" ] ;
+         fhir:display [ fhir:v "Taken to hospital" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-motor-vehicle-involved" ] ;
+         fhir:display [ fhir:v "Is motor vehicle involved" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "naloxone-administered-by" ] ;
+         fhir:display [ fhir:v "Naloxone Administered By" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ems" ] ;
+         fhir:display [ fhir:v "EMS" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-le-naloxone-leave-behind" ] ;
+         fhir:display [ fhir:v "LE left Naloxone behind" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-ems-naloxone-leave-behind" ] ;
+         fhir:display [ fhir:v "EMS left Naloxone behind" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "is-bystander-naloxone-leave-behind" ] ;
+         fhir:display [ fhir:v "Bystander left Naloxone behind" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

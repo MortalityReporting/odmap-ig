@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://orainc.com/fhir/odmap/ValueSet/administered-by,0.1.0,active,,AdministeredBy,Administered By,"This value set includes who administered naloxone.",,"THO (V3),Internal"
+http://orainc.com/fhir/odmap/ValueSet/incident-type,0.1.0,active,,IncidentType,Incident Type,"This value set includes the acceptable incident types.",,"Internal"
+http://orainc.com/fhir/odmap/ValueSet/possible-drugs,0.1.0,active,,PossibleDrugs,Possible Drugs,"This value set includes the possible drugs.",,"THO (V3),Internal"

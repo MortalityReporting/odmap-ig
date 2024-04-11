@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "incident-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-odmap-codes.html\"><code>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-1\">1</a></td><td>Non-Fatal Naloxone Not Administered</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-2\">2</a></td><td>Non-Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-3\">3</a></td><td>Non-Fatal Naloxone Multiple Doses (&gt;2mg IN or &gt;0.4mg IV) Administered</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-4\">4</a></td><td>Fatal Naloxone Not Administered</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-5\">5</a></td><td>Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-6\">6</a></td><td>Fatal Naloxone Multiple Doses (&gt;2mg IN or &gt;0.4mg IV) Administered</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-7\">7</a></td><td>Non-Fatal Naloxone Administration Unknown</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-8\">8</a></td><td>Fatal Naloxone Administration Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://orainc.com/fhir/odmap/ValueSet/incident-type",
+  "version" : "0.1.0",
+  "name" : "IncidentType",
+  "title" : "Incident Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-23T12:35:59-05:00",
+  "publisher" : "Occupational Research and Assessment, Inc.",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://orainc.com"
+    }]
+  }],
+  "description" : "This value set includes the acceptable incident types.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Non-Fatal Naloxone Not Administered"
+      },
+      {
+        "code" : "2",
+        "display" : "Non-Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered"
+      },
+      {
+        "code" : "3",
+        "display" : "Non-Fatal Naloxone Multiple Doses (>2mg IN or >0.4mg IV) Administered"
+      },
+      {
+        "code" : "4",
+        "display" : "Fatal Naloxone Not Administered"
+      },
+      {
+        "code" : "5",
+        "display" : "Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered"
+      },
+      {
+        "code" : "6",
+        "display" : "Fatal Naloxone Multiple Doses (>2mg IN or >0.4mg IV) Administered"
+      },
+      {
+        "code" : "7",
+        "display" : "Non-Fatal Naloxone Administration Unknown"
+      },
+      {
+        "code" : "8",
+        "display" : "Fatal Naloxone Administration Unknown"
+      }]
+    }]
+  }
+}

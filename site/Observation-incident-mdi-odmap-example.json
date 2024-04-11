@@ -1,0 +1,147 @@
+{
+  "resourceType" : "Observation",
+  "id" : "incident-mdi-odmap-example",
+  "meta" : {
+    "profile" : ["http://orainc.com/fhir/odmap/StructureDefinition/Observation-incident"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"incident-mdi-odmap-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;incident-mdi-odmap-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-incident.html\">Observation - Incident</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Injury incident description <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11374-6)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mdi-odmap-example.html\">Patient/patient-mdi-odmap-example</a></p><p><b>effective</b>: 2022-06-09 07:01:00-0400</p><blockquote><p><b>component</b></p><p><b>code</b>: Incident type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#incident-type)</span></p><p><b>value</b>: Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#5)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Suspected drug <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#suspected-drug)</span></p><p><b>value</b>: Heroin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#heroin)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Additional drug <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#additional-drug)</span></p><p><b>value</b>: Cocaine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#cocaine)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Is Multiple Victim <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-multiple-victim)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Taken to hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#taken-to-hospital)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Is motor vehicle involved <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-motor-vehicle-involved)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Naloxone Administered By <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#naloxone-administered-by)</span></p><p><b>value</b>: EMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#ems)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: LE left Naloxone behind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-le-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: EMS left Naloxone behind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-ems-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Bystander left Naloxone behind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-odmap-codes.html\">CodeSystem - ODMAP Codes</a>#is-bystander-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11374-6",
+      "display" : "Injury incident description"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-mdi-odmap-example"
+  },
+  "effectiveDateTime" : "2022-06-09T07:01:00-04:00",
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "incident-type",
+        "display" : "Incident type"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "5",
+        "display" : "Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "suspected-drug",
+        "display" : "Suspected drug"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "heroin",
+        "display" : "Heroin"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "additional-drug",
+        "display" : "Additional drug"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "cocaine",
+        "display" : "Cocaine"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "is-multiple-victim",
+        "display" : "Is Multiple Victim"
+      }]
+    },
+    "valueBoolean" : false
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "taken-to-hospital",
+        "display" : "Taken to hospital"
+      }]
+    },
+    "valueBoolean" : false
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "is-motor-vehicle-involved",
+        "display" : "Is motor vehicle involved"
+      }]
+    },
+    "valueBoolean" : false
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "naloxone-administered-by",
+        "display" : "Naloxone Administered By"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "ems",
+        "display" : "EMS"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "is-le-naloxone-leave-behind",
+        "display" : "LE left Naloxone behind"
+      }]
+    },
+    "valueBoolean" : false
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "is-ems-naloxone-leave-behind",
+        "display" : "EMS left Naloxone behind"
+      }]
+    },
+    "valueBoolean" : false
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+        "code" : "is-bystander-naloxone-leave-behind",
+        "display" : "Bystander left Naloxone behind"
+      }]
+    },
+    "valueBoolean" : false
+  }]
+}

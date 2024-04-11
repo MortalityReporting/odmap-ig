@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://orainc.com/fhir/odmap/ValueSet/possible-drugs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "possible-drugs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-odmap-codes.html\"><code>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-alcohol\">alcohol</a></td><td>Alcohol</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-benzodiazepine\">benzodiazepine</a></td><td>Benzodiazepine</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-cocaine\">cocaine</a></td><td>Cocaine</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-crack\">crack</a></td><td>Crack</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-fentanyl\">fentanyl</a></td><td>Fentanyl</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-heroin\">heroin</a></td><td>Heroin</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-lsd\">lsd</a></td><td>LSD</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-mdma\">mdma</a></td><td>MDMA</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-methadone\">methadone</a></td><td>Methadone</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-methamphetamine\">methamphetamine</a></td><td>Methamphetamine</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-over-the-counter\">over-the-counter</a></td><td>Over The Counter</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-oxycodone\">oxycodone</a></td><td>Oxycodone</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-pcp\">pcp</a></td><td>PCP</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-prescription-drugs\">prescription-drugs</a></td><td>Prescription Drugs</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-suboxone\">suboxone</a></td><td>Suboxone</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-synthetic-marijuana\">synthetic-marijuana</a></td><td>Synthetic Marijuana</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>Other</td><td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/><br/>**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \\*any\\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/><br/>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://orainc.com/fhir/odmap/ValueSet/possible-drugs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PossibleDrugs"] ; # 
+  fhir:title [ fhir:v "Possible Drugs"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-23T12:35:59-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Occupational Research and Assessment, Inc."] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://orainc.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set includes the possible drugs."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "alcohol" ] ;
+         fhir:display [ fhir:v "Alcohol" ]
+       ] [
+         fhir:code [ fhir:v "benzodiazepine" ] ;
+         fhir:display [ fhir:v "Benzodiazepine" ]
+       ] [
+         fhir:code [ fhir:v "cocaine" ] ;
+         fhir:display [ fhir:v "Cocaine" ]
+       ] [
+         fhir:code [ fhir:v "crack" ] ;
+         fhir:display [ fhir:v "Crack" ]
+       ] [
+         fhir:code [ fhir:v "fentanyl" ] ;
+         fhir:display [ fhir:v "Fentanyl" ]
+       ] [
+         fhir:code [ fhir:v "heroin" ] ;
+         fhir:display [ fhir:v "Heroin" ]
+       ] [
+         fhir:code [ fhir:v "lsd" ] ;
+         fhir:display [ fhir:v "LSD" ]
+       ] [
+         fhir:code [ fhir:v "mdma" ] ;
+         fhir:display [ fhir:v "MDMA" ]
+       ] [
+         fhir:code [ fhir:v "methadone" ] ;
+         fhir:display [ fhir:v "Methadone" ]
+       ] [
+         fhir:code [ fhir:v "methamphetamine" ] ;
+         fhir:display [ fhir:v "Methamphetamine" ]
+       ] [
+         fhir:code [ fhir:v "over-the-counter" ] ;
+         fhir:display [ fhir:v "Over The Counter" ]
+       ] [
+         fhir:code [ fhir:v "oxycodone" ] ;
+         fhir:display [ fhir:v "Oxycodone" ]
+       ] [
+         fhir:code [ fhir:v "pcp" ] ;
+         fhir:display [ fhir:v "PCP" ]
+       ] [
+         fhir:code [ fhir:v "prescription-drugs" ] ;
+         fhir:display [ fhir:v "Prescription Drugs" ]
+       ] [
+         fhir:code [ fhir:v "suboxone" ] ;
+         fhir:display [ fhir:v "Suboxone" ]
+       ] [
+         fhir:code [ fhir:v "synthetic-marijuana" ] ;
+         fhir:display [ fhir:v "Synthetic Marijuana" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "OTH" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="possible-drugs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-odmap-codes.html"><code>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-alcohol">alcohol</a></td><td>Alcohol</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-benzodiazepine">benzodiazepine</a></td><td>Benzodiazepine</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-cocaine">cocaine</a></td><td>Cocaine</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-crack">crack</a></td><td>Crack</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-fentanyl">fentanyl</a></td><td>Fentanyl</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-heroin">heroin</a></td><td>Heroin</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-lsd">lsd</a></td><td>LSD</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-mdma">mdma</a></td><td>MDMA</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-methadone">methadone</a></td><td>Methadone</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-methamphetamine">methamphetamine</a></td><td>Methamphetamine</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-over-the-counter">over-the-counter</a></td><td>Over The Counter</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-oxycodone">oxycodone</a></td><td>Oxycodone</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-pcp">pcp</a></td><td>PCP</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-prescription-drugs">prescription-drugs</a></td><td>Prescription Drugs</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-suboxone">suboxone</a></td><td>Suboxone</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-synthetic-marijuana">synthetic-marijuana</a></td><td>Synthetic Marijuana</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a></td><td>Other</td><td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/><br/>**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \*any\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/><br/>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://orainc.com/fhir/odmap/ValueSet/possible-drugs"/>
+  <version value="0.1.0"/>
+  <name value="PossibleDrugs"/>
+  <title value="Possible Drugs"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-23T12:35:59-05:00"/>
+  <publisher value="Occupational Research and Assessment, Inc."/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://orainc.com"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes the possible drugs."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+      <concept>
+        <code value="alcohol"/>
+        <display value="Alcohol"/>
+      </concept>
+      <concept>
+        <code value="benzodiazepine"/>
+        <display value="Benzodiazepine"/>
+      </concept>
+      <concept>
+        <code value="cocaine"/>
+        <display value="Cocaine"/>
+      </concept>
+      <concept>
+        <code value="crack"/>
+        <display value="Crack"/>
+      </concept>
+      <concept>
+        <code value="fentanyl"/>
+        <display value="Fentanyl"/>
+      </concept>
+      <concept>
+        <code value="heroin"/>
+        <display value="Heroin"/>
+      </concept>
+      <concept>
+        <code value="lsd"/>
+        <display value="LSD"/>
+      </concept>
+      <concept>
+        <code value="mdma"/>
+        <display value="MDMA"/>
+      </concept>
+      <concept>
+        <code value="methadone"/>
+        <display value="Methadone"/>
+      </concept>
+      <concept>
+        <code value="methamphetamine"/>
+        <display value="Methamphetamine"/>
+      </concept>
+      <concept>
+        <code value="over-the-counter"/>
+        <display value="Over The Counter"/>
+      </concept>
+      <concept>
+        <code value="oxycodone"/>
+        <display value="Oxycodone"/>
+      </concept>
+      <concept>
+        <code value="pcp"/>
+        <display value="PCP"/>
+      </concept>
+      <concept>
+        <code value="prescription-drugs"/>
+        <display value="Prescription Drugs"/>
+      </concept>
+      <concept>
+        <code value="suboxone"/>
+        <display value="Suboxone"/>
+      </concept>
+      <concept>
+        <code value="synthetic-marijuana"/>
+        <display value="Synthetic Marijuana"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+        <code value="OTH"/>
+        <display value="Other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

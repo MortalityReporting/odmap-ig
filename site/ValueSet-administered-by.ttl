@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://orainc.com/fhir/odmap/ValueSet/administered-by> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "administered-by"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-odmap-codes.html\"><code>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-bystander\">bystander</a></td><td>Bystander</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-police\">police</a></td><td>Police</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-fire\">fire</a></td><td>Fire</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-ems\">ems</a></td><td>EMS</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-hospital\">hospital</a></td><td>Hospital</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>Other</td><td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/><br/>**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \\*any\\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/><br/>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://orainc.com/fhir/odmap/ValueSet/administered-by"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "AdministeredBy"] ; # 
+  fhir:title [ fhir:v "Administered By"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-23T12:35:59-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Occupational Research and Assessment, Inc."] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://orainc.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set includes who administered naloxone."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "bystander" ] ;
+         fhir:display [ fhir:v "Bystander" ]
+       ] [
+         fhir:code [ fhir:v "police" ] ;
+         fhir:display [ fhir:v "Police" ]
+       ] [
+         fhir:code [ fhir:v "fire" ] ;
+         fhir:display [ fhir:v "Fire" ]
+       ] [
+         fhir:code [ fhir:v "ems" ] ;
+         fhir:display [ fhir:v "EMS" ]
+       ] [
+         fhir:code [ fhir:v "hospital" ] ;
+         fhir:display [ fhir:v "Hospital" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "OTH" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

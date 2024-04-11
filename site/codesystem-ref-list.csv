@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://orainc.com/fhir/odmap/CodeSystem/odmap-codes,0.1.0,active,,CodeSystemODMAPCodes,CodeSystem - ODMAP Codes,"This code system contains codes for ODMAP.","ValueSet/administered-by,ValueSet/possible-drugs,ValueSet/incident-type"
+http://terminology.hl7.org/CodeSystem/v3-NullFlavor,2.1.0,active,"2.16.840.1.113883.5.1008",NullFlavor,NullFlavor,"A collection of codes specifying why a valid value is not present.","ValueSet/administered-by,ValueSet/possible-drugs"

@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://orainc.com/fhir/odmap/Patient/patient-mdi-odmap-example> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-mdi-odmap-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Patient-odmap"^^xsd:anyURI ;
+       fhir:link <http://orainc.com/fhir/odmap/StructureDefinition/Patient-odmap>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> male, DoB Unknown ( id: 2023-0051)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Document the age in years\"><a href=\"StructureDefinition-Extension-age-years.html\">Extension - Age Years:</a></td><td colspan=\"3\"><ul><li>39</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://orainc.com/fhir/odmap/StructureDefinition/Extension-age-years"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "39"^^xsd:integer ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://mdilog.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-0051" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] . # 
+
+# -------------------------------------------------------------------------------------
+

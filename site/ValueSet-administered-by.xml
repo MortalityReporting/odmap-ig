@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="administered-by"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-odmap-codes.html"><code>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-bystander">bystander</a></td><td>Bystander</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-police">police</a></td><td>Police</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-fire">fire</a></td><td>Fire</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-ems">ems</a></td><td>EMS</td></tr><tr><td><a href="CodeSystem-odmap-codes.html#odmap-codes-hospital">hospital</a></td><td>Hospital</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a></td><td>Other</td><td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/><br/>**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \*any\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/><br/>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://orainc.com/fhir/odmap/ValueSet/administered-by"/>
+  <version value="0.1.0"/>
+  <name value="AdministeredBy"/>
+  <title value="Administered By"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-23T12:35:59-05:00"/>
+  <publisher value="Occupational Research and Assessment, Inc."/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://orainc.com"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes who administered naloxone."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+      <concept>
+        <code value="bystander"/>
+        <display value="Bystander"/>
+      </concept>
+      <concept>
+        <code value="police"/>
+        <display value="Police"/>
+      </concept>
+      <concept>
+        <code value="fire"/>
+        <display value="Fire"/>
+      </concept>
+      <concept>
+        <code value="ems"/>
+        <display value="EMS"/>
+      </concept>
+      <concept>
+        <code value="hospital"/>
+        <display value="Hospital"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+        <code value="OTH"/>
+        <display value="Other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,106 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "possible-drugs",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-odmap-codes.html\"><code>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-alcohol\">alcohol</a></td><td>Alcohol</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-benzodiazepine\">benzodiazepine</a></td><td>Benzodiazepine</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-cocaine\">cocaine</a></td><td>Cocaine</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-crack\">crack</a></td><td>Crack</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-fentanyl\">fentanyl</a></td><td>Fentanyl</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-heroin\">heroin</a></td><td>Heroin</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-lsd\">lsd</a></td><td>LSD</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-mdma\">mdma</a></td><td>MDMA</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-methadone\">methadone</a></td><td>Methadone</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-methamphetamine\">methamphetamine</a></td><td>Methamphetamine</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-over-the-counter\">over-the-counter</a></td><td>Over The Counter</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-oxycodone\">oxycodone</a></td><td>Oxycodone</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-pcp\">pcp</a></td><td>PCP</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-prescription-drugs\">prescription-drugs</a></td><td>Prescription Drugs</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-suboxone\">suboxone</a></td><td>Suboxone</td></tr><tr><td><a href=\"CodeSystem-odmap-codes.html#odmap-codes-synthetic-marijuana\">synthetic-marijuana</a></td><td>Synthetic Marijuana</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>Other</td><td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/><br/>**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \\*any\\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/><br/>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://orainc.com/fhir/odmap/ValueSet/possible-drugs",
+  "version" : "0.1.0",
+  "name" : "PossibleDrugs",
+  "title" : "Possible Drugs",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-23T12:35:59-05:00",
+  "publisher" : "Occupational Research and Assessment, Inc.",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://orainc.com"
+    }]
+  }],
+  "description" : "This value set includes the possible drugs.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+      "concept" : [{
+        "code" : "alcohol",
+        "display" : "Alcohol"
+      },
+      {
+        "code" : "benzodiazepine",
+        "display" : "Benzodiazepine"
+      },
+      {
+        "code" : "cocaine",
+        "display" : "Cocaine"
+      },
+      {
+        "code" : "crack",
+        "display" : "Crack"
+      },
+      {
+        "code" : "fentanyl",
+        "display" : "Fentanyl"
+      },
+      {
+        "code" : "heroin",
+        "display" : "Heroin"
+      },
+      {
+        "code" : "lsd",
+        "display" : "LSD"
+      },
+      {
+        "code" : "mdma",
+        "display" : "MDMA"
+      },
+      {
+        "code" : "methadone",
+        "display" : "Methadone"
+      },
+      {
+        "code" : "methamphetamine",
+        "display" : "Methamphetamine"
+      },
+      {
+        "code" : "over-the-counter",
+        "display" : "Over The Counter"
+      },
+      {
+        "code" : "oxycodone",
+        "display" : "Oxycodone"
+      },
+      {
+        "code" : "pcp",
+        "display" : "PCP"
+      },
+      {
+        "code" : "prescription-drugs",
+        "display" : "Prescription Drugs"
+      },
+      {
+        "code" : "suboxone",
+        "display" : "Suboxone"
+      },
+      {
+        "code" : "synthetic-marijuana",
+        "display" : "Synthetic Marijuana"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "concept" : [{
+        "code" : "OTH",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

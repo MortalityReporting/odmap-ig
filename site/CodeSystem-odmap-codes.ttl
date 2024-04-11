@@ -1,0 +1,165 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://orainc.com/fhir/odmap/CodeSystem/odmap-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "odmap-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">odmap-submission<a name=\"odmap-codes-odmap-submission\"> </a></td><td>ODMAP submission</td></tr><tr><td style=\"white-space:nowrap\">incident-section<a name=\"odmap-codes-incident-section\"> </a></td><td>Incident section</td></tr><tr><td style=\"white-space:nowrap\">incident-type<a name=\"odmap-codes-incident-type\"> </a></td><td>Incident type</td></tr><tr><td style=\"white-space:nowrap\">suspected-drug<a name=\"odmap-codes-suspected-drug\"> </a></td><td>Suspected drug</td></tr><tr><td style=\"white-space:nowrap\">additional-drug<a name=\"odmap-codes-additional-drug\"> </a></td><td>Additional drug</td></tr><tr><td style=\"white-space:nowrap\">is-multiple-victim<a name=\"odmap-codes-is-multiple-victim\"> </a></td><td>Is Multiple Victim</td></tr><tr><td style=\"white-space:nowrap\">taken-to-hospital<a name=\"odmap-codes-taken-to-hospital\"> </a></td><td>Taken to hospital</td></tr><tr><td style=\"white-space:nowrap\">is-motor-vehicle-involved<a name=\"odmap-codes-is-motor-vehicle-involved\"> </a></td><td>Is motor vehicle involved</td></tr><tr><td style=\"white-space:nowrap\">naloxone-administered-by<a name=\"odmap-codes-naloxone-administered-by\"> </a></td><td>Naloxone Administered By</td></tr><tr><td style=\"white-space:nowrap\">is-le-naloxone-leave-behind<a name=\"odmap-codes-is-le-naloxone-leave-behind\"> </a></td><td>LE left Naloxone behind</td></tr><tr><td style=\"white-space:nowrap\">is-ems-naloxone-leave-behind<a name=\"odmap-codes-is-ems-naloxone-leave-behind\"> </a></td><td>EMS left Naloxone behind</td></tr><tr><td style=\"white-space:nowrap\">is-bystander-naloxone-leave-behind<a name=\"odmap-codes-is-bystander-naloxone-leave-behind\"> </a></td><td>Bystander left Naloxone behind</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"odmap-codes-1\"> </a></td><td>Non-Fatal Naloxone Not Administered</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"odmap-codes-2\"> </a></td><td>Non-Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"odmap-codes-3\"> </a></td><td>Non-Fatal Naloxone Multiple Doses (&gt;2mg IN or &gt;0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"odmap-codes-4\"> </a></td><td>Fatal Naloxone Not Administered</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"odmap-codes-5\"> </a></td><td>Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"odmap-codes-6\"> </a></td><td>Fatal Naloxone Multiple Doses (&gt;2mg IN or &gt;0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"odmap-codes-7\"> </a></td><td>Non-Fatal Naloxone Administration Unknown</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"odmap-codes-8\"> </a></td><td>Fatal Naloxone Administration Unknown</td></tr><tr><td style=\"white-space:nowrap\">alcohol<a name=\"odmap-codes-alcohol\"> </a></td><td>Alcohol</td></tr><tr><td style=\"white-space:nowrap\">benzodiazepine<a name=\"odmap-codes-benzodiazepine\"> </a></td><td>Benzodiazepine</td></tr><tr><td style=\"white-space:nowrap\">cocaine<a name=\"odmap-codes-cocaine\"> </a></td><td>Cocaine</td></tr><tr><td style=\"white-space:nowrap\">crack<a name=\"odmap-codes-crack\"> </a></td><td>Crack</td></tr><tr><td style=\"white-space:nowrap\">fentanyl<a name=\"odmap-codes-fentanyl\"> </a></td><td>Fentanyl</td></tr><tr><td style=\"white-space:nowrap\">heroin<a name=\"odmap-codes-heroin\"> </a></td><td>Heroin</td></tr><tr><td style=\"white-space:nowrap\">lsd<a name=\"odmap-codes-lsd\"> </a></td><td>LSD</td></tr><tr><td style=\"white-space:nowrap\">mdma<a name=\"odmap-codes-mdma\"> </a></td><td>MDMA</td></tr><tr><td style=\"white-space:nowrap\">methadone<a name=\"odmap-codes-methadone\"> </a></td><td>Methadone</td></tr><tr><td style=\"white-space:nowrap\">methamphetamine<a name=\"odmap-codes-methamphetamine\"> </a></td><td>Methamphetamine</td></tr><tr><td style=\"white-space:nowrap\">over-the-counter<a name=\"odmap-codes-over-the-counter\"> </a></td><td>Over The Counter</td></tr><tr><td style=\"white-space:nowrap\">oxycodone<a name=\"odmap-codes-oxycodone\"> </a></td><td>Oxycodone</td></tr><tr><td style=\"white-space:nowrap\">pcp<a name=\"odmap-codes-pcp\"> </a></td><td>PCP</td></tr><tr><td style=\"white-space:nowrap\">prescription-drugs<a name=\"odmap-codes-prescription-drugs\"> </a></td><td>Prescription Drugs</td></tr><tr><td style=\"white-space:nowrap\">suboxone<a name=\"odmap-codes-suboxone\"> </a></td><td>Suboxone</td></tr><tr><td style=\"white-space:nowrap\">synthetic-marijuana<a name=\"odmap-codes-synthetic-marijuana\"> </a></td><td>Synthetic Marijuana</td></tr><tr><td style=\"white-space:nowrap\">bystander<a name=\"odmap-codes-bystander\"> </a></td><td>Bystander</td></tr><tr><td style=\"white-space:nowrap\">police<a name=\"odmap-codes-police\"> </a></td><td>Police</td></tr><tr><td style=\"white-space:nowrap\">fire<a name=\"odmap-codes-fire\"> </a></td><td>Fire</td></tr><tr><td style=\"white-space:nowrap\">ems<a name=\"odmap-codes-ems\"> </a></td><td>EMS</td></tr><tr><td style=\"white-space:nowrap\">hospital<a name=\"odmap-codes-hospital\"> </a></td><td>Hospital</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CodeSystemODMAPCodes"] ; # 
+  fhir:title [ fhir:v "CodeSystem - ODMAP Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-23T12:35:59-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Occupational Research and Assessment, Inc."] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://orainc.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This code system contains codes for ODMAP."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "odmap-submission" ] ;
+     fhir:display [ fhir:v "ODMAP submission" ]
+  ] [
+     fhir:code [ fhir:v "incident-section" ] ;
+     fhir:display [ fhir:v "Incident section" ]
+  ] [
+     fhir:code [ fhir:v "incident-type" ] ;
+     fhir:display [ fhir:v "Incident type" ]
+  ] [
+     fhir:code [ fhir:v "suspected-drug" ] ;
+     fhir:display [ fhir:v "Suspected drug" ]
+  ] [
+     fhir:code [ fhir:v "additional-drug" ] ;
+     fhir:display [ fhir:v "Additional drug" ]
+  ] [
+     fhir:code [ fhir:v "is-multiple-victim" ] ;
+     fhir:display [ fhir:v "Is Multiple Victim" ]
+  ] [
+     fhir:code [ fhir:v "taken-to-hospital" ] ;
+     fhir:display [ fhir:v "Taken to hospital" ]
+  ] [
+     fhir:code [ fhir:v "is-motor-vehicle-involved" ] ;
+     fhir:display [ fhir:v "Is motor vehicle involved" ]
+  ] [
+     fhir:code [ fhir:v "naloxone-administered-by" ] ;
+     fhir:display [ fhir:v "Naloxone Administered By" ]
+  ] [
+     fhir:code [ fhir:v "is-le-naloxone-leave-behind" ] ;
+     fhir:display [ fhir:v "LE left Naloxone behind" ]
+  ] [
+     fhir:code [ fhir:v "is-ems-naloxone-leave-behind" ] ;
+     fhir:display [ fhir:v "EMS left Naloxone behind" ]
+  ] [
+     fhir:code [ fhir:v "is-bystander-naloxone-leave-behind" ] ;
+     fhir:display [ fhir:v "Bystander left Naloxone behind" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Non-Fatal Naloxone Not Administered" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Non-Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Non-Fatal Naloxone Multiple Doses (>2mg IN or >0.4mg IV) Administered" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Fatal Naloxone Not Administered" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "Fatal Naloxone Multiple Doses (>2mg IN or >0.4mg IV) Administered" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "Non-Fatal Naloxone Administration Unknown" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "Fatal Naloxone Administration Unknown" ]
+  ] [
+     fhir:code [ fhir:v "alcohol" ] ;
+     fhir:display [ fhir:v "Alcohol" ]
+  ] [
+     fhir:code [ fhir:v "benzodiazepine" ] ;
+     fhir:display [ fhir:v "Benzodiazepine" ]
+  ] [
+     fhir:code [ fhir:v "cocaine" ] ;
+     fhir:display [ fhir:v "Cocaine" ]
+  ] [
+     fhir:code [ fhir:v "crack" ] ;
+     fhir:display [ fhir:v "Crack" ]
+  ] [
+     fhir:code [ fhir:v "fentanyl" ] ;
+     fhir:display [ fhir:v "Fentanyl" ]
+  ] [
+     fhir:code [ fhir:v "heroin" ] ;
+     fhir:display [ fhir:v "Heroin" ]
+  ] [
+     fhir:code [ fhir:v "lsd" ] ;
+     fhir:display [ fhir:v "LSD" ]
+  ] [
+     fhir:code [ fhir:v "mdma" ] ;
+     fhir:display [ fhir:v "MDMA" ]
+  ] [
+     fhir:code [ fhir:v "methadone" ] ;
+     fhir:display [ fhir:v "Methadone" ]
+  ] [
+     fhir:code [ fhir:v "methamphetamine" ] ;
+     fhir:display [ fhir:v "Methamphetamine" ]
+  ] [
+     fhir:code [ fhir:v "over-the-counter" ] ;
+     fhir:display [ fhir:v "Over The Counter" ]
+  ] [
+     fhir:code [ fhir:v "oxycodone" ] ;
+     fhir:display [ fhir:v "Oxycodone" ]
+  ] [
+     fhir:code [ fhir:v "pcp" ] ;
+     fhir:display [ fhir:v "PCP" ]
+  ] [
+     fhir:code [ fhir:v "prescription-drugs" ] ;
+     fhir:display [ fhir:v "Prescription Drugs" ]
+  ] [
+     fhir:code [ fhir:v "suboxone" ] ;
+     fhir:display [ fhir:v "Suboxone" ]
+  ] [
+     fhir:code [ fhir:v "synthetic-marijuana" ] ;
+     fhir:display [ fhir:v "Synthetic Marijuana" ]
+  ] [
+     fhir:code [ fhir:v "bystander" ] ;
+     fhir:display [ fhir:v "Bystander" ]
+  ] [
+     fhir:code [ fhir:v "police" ] ;
+     fhir:display [ fhir:v "Police" ]
+  ] [
+     fhir:code [ fhir:v "fire" ] ;
+     fhir:display [ fhir:v "Fire" ]
+  ] [
+     fhir:code [ fhir:v "ems" ] ;
+     fhir:display [ fhir:v "EMS" ]
+  ] [
+     fhir:code [ fhir:v "hospital" ] ;
+     fhir:display [ fhir:v "Hospital" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

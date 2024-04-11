@@ -1,0 +1,196 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "odmap-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://orainc.com/fhir/odmap/CodeSystem/odmap-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">odmap-submission<a name=\"odmap-codes-odmap-submission\"> </a></td><td>ODMAP submission</td></tr><tr><td style=\"white-space:nowrap\">incident-section<a name=\"odmap-codes-incident-section\"> </a></td><td>Incident section</td></tr><tr><td style=\"white-space:nowrap\">incident-type<a name=\"odmap-codes-incident-type\"> </a></td><td>Incident type</td></tr><tr><td style=\"white-space:nowrap\">suspected-drug<a name=\"odmap-codes-suspected-drug\"> </a></td><td>Suspected drug</td></tr><tr><td style=\"white-space:nowrap\">additional-drug<a name=\"odmap-codes-additional-drug\"> </a></td><td>Additional drug</td></tr><tr><td style=\"white-space:nowrap\">is-multiple-victim<a name=\"odmap-codes-is-multiple-victim\"> </a></td><td>Is Multiple Victim</td></tr><tr><td style=\"white-space:nowrap\">taken-to-hospital<a name=\"odmap-codes-taken-to-hospital\"> </a></td><td>Taken to hospital</td></tr><tr><td style=\"white-space:nowrap\">is-motor-vehicle-involved<a name=\"odmap-codes-is-motor-vehicle-involved\"> </a></td><td>Is motor vehicle involved</td></tr><tr><td style=\"white-space:nowrap\">naloxone-administered-by<a name=\"odmap-codes-naloxone-administered-by\"> </a></td><td>Naloxone Administered By</td></tr><tr><td style=\"white-space:nowrap\">is-le-naloxone-leave-behind<a name=\"odmap-codes-is-le-naloxone-leave-behind\"> </a></td><td>LE left Naloxone behind</td></tr><tr><td style=\"white-space:nowrap\">is-ems-naloxone-leave-behind<a name=\"odmap-codes-is-ems-naloxone-leave-behind\"> </a></td><td>EMS left Naloxone behind</td></tr><tr><td style=\"white-space:nowrap\">is-bystander-naloxone-leave-behind<a name=\"odmap-codes-is-bystander-naloxone-leave-behind\"> </a></td><td>Bystander left Naloxone behind</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"odmap-codes-1\"> </a></td><td>Non-Fatal Naloxone Not Administered</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"odmap-codes-2\"> </a></td><td>Non-Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"odmap-codes-3\"> </a></td><td>Non-Fatal Naloxone Multiple Doses (&gt;2mg IN or &gt;0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"odmap-codes-4\"> </a></td><td>Fatal Naloxone Not Administered</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"odmap-codes-5\"> </a></td><td>Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"odmap-codes-6\"> </a></td><td>Fatal Naloxone Multiple Doses (&gt;2mg IN or &gt;0.4mg IV) Administered</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"odmap-codes-7\"> </a></td><td>Non-Fatal Naloxone Administration Unknown</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"odmap-codes-8\"> </a></td><td>Fatal Naloxone Administration Unknown</td></tr><tr><td style=\"white-space:nowrap\">alcohol<a name=\"odmap-codes-alcohol\"> </a></td><td>Alcohol</td></tr><tr><td style=\"white-space:nowrap\">benzodiazepine<a name=\"odmap-codes-benzodiazepine\"> </a></td><td>Benzodiazepine</td></tr><tr><td style=\"white-space:nowrap\">cocaine<a name=\"odmap-codes-cocaine\"> </a></td><td>Cocaine</td></tr><tr><td style=\"white-space:nowrap\">crack<a name=\"odmap-codes-crack\"> </a></td><td>Crack</td></tr><tr><td style=\"white-space:nowrap\">fentanyl<a name=\"odmap-codes-fentanyl\"> </a></td><td>Fentanyl</td></tr><tr><td style=\"white-space:nowrap\">heroin<a name=\"odmap-codes-heroin\"> </a></td><td>Heroin</td></tr><tr><td style=\"white-space:nowrap\">lsd<a name=\"odmap-codes-lsd\"> </a></td><td>LSD</td></tr><tr><td style=\"white-space:nowrap\">mdma<a name=\"odmap-codes-mdma\"> </a></td><td>MDMA</td></tr><tr><td style=\"white-space:nowrap\">methadone<a name=\"odmap-codes-methadone\"> </a></td><td>Methadone</td></tr><tr><td style=\"white-space:nowrap\">methamphetamine<a name=\"odmap-codes-methamphetamine\"> </a></td><td>Methamphetamine</td></tr><tr><td style=\"white-space:nowrap\">over-the-counter<a name=\"odmap-codes-over-the-counter\"> </a></td><td>Over The Counter</td></tr><tr><td style=\"white-space:nowrap\">oxycodone<a name=\"odmap-codes-oxycodone\"> </a></td><td>Oxycodone</td></tr><tr><td style=\"white-space:nowrap\">pcp<a name=\"odmap-codes-pcp\"> </a></td><td>PCP</td></tr><tr><td style=\"white-space:nowrap\">prescription-drugs<a name=\"odmap-codes-prescription-drugs\"> </a></td><td>Prescription Drugs</td></tr><tr><td style=\"white-space:nowrap\">suboxone<a name=\"odmap-codes-suboxone\"> </a></td><td>Suboxone</td></tr><tr><td style=\"white-space:nowrap\">synthetic-marijuana<a name=\"odmap-codes-synthetic-marijuana\"> </a></td><td>Synthetic Marijuana</td></tr><tr><td style=\"white-space:nowrap\">bystander<a name=\"odmap-codes-bystander\"> </a></td><td>Bystander</td></tr><tr><td style=\"white-space:nowrap\">police<a name=\"odmap-codes-police\"> </a></td><td>Police</td></tr><tr><td style=\"white-space:nowrap\">fire<a name=\"odmap-codes-fire\"> </a></td><td>Fire</td></tr><tr><td style=\"white-space:nowrap\">ems<a name=\"odmap-codes-ems\"> </a></td><td>EMS</td></tr><tr><td style=\"white-space:nowrap\">hospital<a name=\"odmap-codes-hospital\"> </a></td><td>Hospital</td></tr></table></div>"
+  },
+  "url" : "http://orainc.com/fhir/odmap/CodeSystem/odmap-codes",
+  "version" : "0.1.0",
+  "name" : "CodeSystemODMAPCodes",
+  "title" : "CodeSystem - ODMAP Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-23T12:35:59-05:00",
+  "publisher" : "Occupational Research and Assessment, Inc.",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://orainc.com"
+    }]
+  }],
+  "description" : "This code system contains codes for ODMAP.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "odmap-submission",
+    "display" : "ODMAP submission"
+  },
+  {
+    "code" : "incident-section",
+    "display" : "Incident section"
+  },
+  {
+    "code" : "incident-type",
+    "display" : "Incident type"
+  },
+  {
+    "code" : "suspected-drug",
+    "display" : "Suspected drug"
+  },
+  {
+    "code" : "additional-drug",
+    "display" : "Additional drug"
+  },
+  {
+    "code" : "is-multiple-victim",
+    "display" : "Is Multiple Victim"
+  },
+  {
+    "code" : "taken-to-hospital",
+    "display" : "Taken to hospital"
+  },
+  {
+    "code" : "is-motor-vehicle-involved",
+    "display" : "Is motor vehicle involved"
+  },
+  {
+    "code" : "naloxone-administered-by",
+    "display" : "Naloxone Administered By"
+  },
+  {
+    "code" : "is-le-naloxone-leave-behind",
+    "display" : "LE left Naloxone behind"
+  },
+  {
+    "code" : "is-ems-naloxone-leave-behind",
+    "display" : "EMS left Naloxone behind"
+  },
+  {
+    "code" : "is-bystander-naloxone-leave-behind",
+    "display" : "Bystander left Naloxone behind"
+  },
+  {
+    "code" : "1",
+    "display" : "Non-Fatal Naloxone Not Administered"
+  },
+  {
+    "code" : "2",
+    "display" : "Non-Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered"
+  },
+  {
+    "code" : "3",
+    "display" : "Non-Fatal Naloxone Multiple Doses (>2mg IN or >0.4mg IV) Administered"
+  },
+  {
+    "code" : "4",
+    "display" : "Fatal Naloxone Not Administered"
+  },
+  {
+    "code" : "5",
+    "display" : "Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered"
+  },
+  {
+    "code" : "6",
+    "display" : "Fatal Naloxone Multiple Doses (>2mg IN or >0.4mg IV) Administered"
+  },
+  {
+    "code" : "7",
+    "display" : "Non-Fatal Naloxone Administration Unknown"
+  },
+  {
+    "code" : "8",
+    "display" : "Fatal Naloxone Administration Unknown"
+  },
+  {
+    "code" : "alcohol",
+    "display" : "Alcohol"
+  },
+  {
+    "code" : "benzodiazepine",
+    "display" : "Benzodiazepine"
+  },
+  {
+    "code" : "cocaine",
+    "display" : "Cocaine"
+  },
+  {
+    "code" : "crack",
+    "display" : "Crack"
+  },
+  {
+    "code" : "fentanyl",
+    "display" : "Fentanyl"
+  },
+  {
+    "code" : "heroin",
+    "display" : "Heroin"
+  },
+  {
+    "code" : "lsd",
+    "display" : "LSD"
+  },
+  {
+    "code" : "mdma",
+    "display" : "MDMA"
+  },
+  {
+    "code" : "methadone",
+    "display" : "Methadone"
+  },
+  {
+    "code" : "methamphetamine",
+    "display" : "Methamphetamine"
+  },
+  {
+    "code" : "over-the-counter",
+    "display" : "Over The Counter"
+  },
+  {
+    "code" : "oxycodone",
+    "display" : "Oxycodone"
+  },
+  {
+    "code" : "pcp",
+    "display" : "PCP"
+  },
+  {
+    "code" : "prescription-drugs",
+    "display" : "Prescription Drugs"
+  },
+  {
+    "code" : "suboxone",
+    "display" : "Suboxone"
+  },
+  {
+    "code" : "synthetic-marijuana",
+    "display" : "Synthetic Marijuana"
+  },
+  {
+    "code" : "bystander",
+    "display" : "Bystander"
+  },
+  {
+    "code" : "police",
+    "display" : "Police"
+  },
+  {
+    "code" : "fire",
+    "display" : "Fire"
+  },
+  {
+    "code" : "ems",
+    "display" : "EMS"
+  },
+  {
+    "code" : "hospital",
+    "display" : "Hospital"
+  }]
+}

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Bundle-document-odmap-example"/>
+  <meta>
+    <profile value="http://orainc.com/fhir/odmap/StructureDefinition/Bundle-document-odmap"/>
+  </meta>
+  <identifier>
+    <system value="https://mdilog.com"/>
+    <value value="2541097"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2024-01-15T15:30:00Z"/>
+  <entry>
+    <fullUrl value="https://mdilog.com/Composition/composition-mdi-odmap"/>
+    <resource>
+      <Composition>
+        <id value="composition-mdi-odmap"/>
+        <meta>
+          <profile value="http://orainc.com/fhir/odmap/StructureDefinition/Composition-odmap"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="composition-mdi-odmap"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;composition-mdi-odmap&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-odmap.html">Composition - ODMAP</a></p></div><p><b>status</b>: final</p><p><b>type</b>: ODMAP submission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#odmap-submission)</span></p><p><b>date</b>: 2024-01-15</p><p><b>author</b>: <a href="#Organization_Organization-MDILog">See above (Organization/Organization-MDILog)</a></p><p><b>title</b>: MDILog to ODMAP Composition</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+            <code value="odmap-submission"/>
+            <display value="ODMAP submission"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/patient-mdi-odmap"/>
+        </subject>
+        <date value="2024-01-15"/>
+        <author>
+          <reference value="Organization/Organization-MDILog"/>
+        </author>
+        <title value="MDILog to ODMAP Composition"/>
+        <section>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="incident-section"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Location/location-mdi-odmap"/>
+          </entry>
+          <entry>
+            <reference value="Observation/incident-mdi-odmap"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://mdilog.com/Organization/Organization-MDILog"/>
+    <resource>
+      <Organization>
+        <id value="Organization-MDILog"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="Organization-MDILog"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;Organization-MDILog&quot; </p></div><p><b>name</b>: MDILog</p></div>
+        </text>
+        <name value="MDILog"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://mdilog.com/Patient/patient-mdi-odmap"/>
+    <resource>
+      <Patient>
+        <id value="patient-mdi-odmap"/>
+        <meta>
+          <profile value="http://orainc.com/fhir/odmap/StructureDefinition/Patient-odmap"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="patient-mdi-odmap"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;patient-mdi-odmap&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Patient-odmap.html">Patient - ODMAP</a></p></div><p><b>Extension - Age Years</b>: 39</p><p><b>identifier</b>: id: 2023-0051</p><p><b>gender</b>: male</p></div>
+        </text>
+        <extension url="http://orainc.com/fhir/odmap/StructureDefinition/Extension-age-years">
+          <valueInteger value="39"/>
+        </extension>
+        <identifier>
+          <system value="https://mdilog.com"/>
+          <value value="2023-0051"/>
+        </identifier>
+        <gender value="male"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://mdilog.com/Location/location-mdi-odmap"/>
+    <resource>
+      <Location>
+        <id value="location-mdi-odmap"/>
+        <meta>
+          <profile value="http://orainc.com/fhir/odmap/StructureDefinition/Location-incident"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="location-mdi-odmap"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;location-mdi-odmap&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Location-incident.html">Location - Incident</a></p></div><p><b>address</b>: 124 Elm Street Big Rapids MI 49307 </p><h3>Positions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style="display: none">*</td><td>-85.48261869999999</td><td>43.6968812</td></tr></table></div>
+        </text>
+        <address>
+          <line value="124 Elm Street"/>
+          <city value="Big Rapids"/>
+          <district value="Mecosta"/>
+          <state value="MI"/>
+          <postalCode value="49307"/>
+        </address>
+        <position>
+          <longitude value="-85.48261869999999"/>
+          <latitude value="43.6968812"/>
+        </position>
+      </Location>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://mdilog.com/Observation/incident-mdi-odmap"/>
+    <resource>
+      <Observation>
+        <id value="incident-mdi-odmap"/>
+        <meta>
+          <profile value="http://orainc.com/fhir/odmap/StructureDefinition/Observation-incident"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="incident-mdi-odmap"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;incident-mdi-odmap&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-incident.html">Observation - Incident</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Injury incident description <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11374-6)</span></p><p><b>subject</b>: <a href="#Patient_patient-mdi-odmap">See above (Patient/patient-mdi-odmap)</a></p><p><b>effective</b>: 2022-06-09 07:01:00-0400</p><blockquote><p><b>component</b></p><p><b>code</b>: Incident type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#incident-type)</span></p><p><b>value</b>: Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#5)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Suspected drug <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#suspected-drug)</span></p><p><b>value</b>: Heroin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#heroin)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Additional drug <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#additional-drug)</span></p><p><b>value</b>: Cocaine <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#cocaine)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Is Multiple Victim <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#is-multiple-victim)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Taken to hospital <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#taken-to-hospital)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Is motor vehicle involved <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#is-motor-vehicle-involved)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Naloxone Administered By <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#naloxone-administered-by)</span></p><p><b>value</b>: EMS <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#ems)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: LE left Naloxone behind <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#is-le-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: EMS left Naloxone behind <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#is-ems-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Bystander left Naloxone behind <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-odmap-codes.html">CodeSystem - ODMAP Codes</a>#is-bystander-naloxone-leave-behind)</span></p><p><b>value</b>: false</p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11374-6"/>
+            <display value="Injury incident description"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-mdi-odmap"/>
+        </subject>
+        <effectiveDateTime value="2022-06-09T07:01:00-04:00"/>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="incident-type"/>
+              <display value="Incident type"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="5"/>
+              <display value="Fatal Naloxone Single Dose (2mg IN or 0.4mg IV) Administered"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="suspected-drug"/>
+              <display value="Suspected drug"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="heroin"/>
+              <display value="Heroin"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="additional-drug"/>
+              <display value="Additional drug"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="cocaine"/>
+              <display value="Cocaine"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="is-multiple-victim"/>
+              <display value="Is Multiple Victim"/>
+            </coding>
+          </code>
+          <valueBoolean value="false"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="taken-to-hospital"/>
+              <display value="Taken to hospital"/>
+            </coding>
+          </code>
+          <valueBoolean value="false"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="is-motor-vehicle-involved"/>
+              <display value="Is motor vehicle involved"/>
+            </coding>
+          </code>
+          <valueBoolean value="false"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="naloxone-administered-by"/>
+              <display value="Naloxone Administered By"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="ems"/>
+              <display value="EMS"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="is-le-naloxone-leave-behind"/>
+              <display value="LE left Naloxone behind"/>
+            </coding>
+          </code>
+          <valueBoolean value="false"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="is-ems-naloxone-leave-behind"/>
+              <display value="EMS left Naloxone behind"/>
+            </coding>
+          </code>
+          <valueBoolean value="false"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://orainc.com/fhir/odmap/CodeSystem/odmap-codes"/>
+              <code value="is-bystander-naloxone-leave-behind"/>
+              <display value="Bystander left Naloxone behind"/>
+            </coding>
+          </code>
+          <valueBoolean value="false"/>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>
